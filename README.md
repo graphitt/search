@@ -1,6 +1,7 @@
 # Search assignment
 
 ## Running apps
+Api-server `.env` file needs to have external path put in the `SERVICE_PATH`, as this should not be exposed in repo.
 in the main directory run `npm install` and then `npm start`
 
 ## Structure

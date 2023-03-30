@@ -16,7 +16,7 @@ const validKeys = [
 ]
 
 const fetchSingle = async (key:string): Promise<TransformedData> => {
-  const item = await (await fetch(`https://storage.googleapis.com/coding-session-rest-api/${key}`)).json();
+  const item = await (await fetch(`${process.env.SERVICE_PATH}/${key}`)).json();
   const transformed = transformData(item);
   return transformed;
 } 
